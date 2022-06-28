@@ -9,7 +9,6 @@
     $pdf =  new FPDF('P','mm','A4');
     $pdf->AddPage();
     $pdf->SetFont('Arial','',12);
-
     while ($village = $query->fetch_assoc()) {
         $line=0;
         $pdf->Cell(40,10,$village["villageName"],1,$line,'C');
@@ -21,4 +20,4 @@
     $pdf->Output();
     echo "Done";
     $mysql->close();
-?>
+?>                                                                                                                                                                                                                             
